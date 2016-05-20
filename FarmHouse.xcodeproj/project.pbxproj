@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		461360A11CEEA33400C5346B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360A01CEEA33400C5346B /* AppDelegate.swift */; };
+		461360A31CEEA33400C5346B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360A21CEEA33400C5346B /* ViewController.swift */; };
+		461360A61CEEA33400C5346B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461360A41CEEA33400C5346B /* Main.storyboard */; };
+		461360A81CEEA33400C5346B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461360A71CEEA33400C5346B /* Assets.xcassets */; };
+		461360AB1CEEA33400C5346B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461360A91CEEA33400C5346B /* LaunchScreen.storyboard */; };
+		461360B61CEEA33400C5346B /* FarmHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360B51CEEA33400C5346B /* FarmHouseTests.swift */; };
+		461360C11CEEA33400C5346B /* FarmHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360C01CEEA33400C5346B /* FarmHouseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		461360B21CEEA33400C5346B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 461360951CEEA33400C5346B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4613609C1CEEA33400C5346B;
+			remoteInfo = FarmHouse;
+		};
+		461360BD1CEEA33400C5346B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 461360951CEEA33400C5346B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4613609C1CEEA33400C5346B;
+			remoteInfo = FarmHouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4613609D1CEEA33400C5346B /* FarmHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		461360A01CEEA33400C5346B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		461360A21CEEA33400C5346B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		461360A51CEEA33400C5346B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		461360A71CEEA33400C5346B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		461360AA1CEEA33400C5346B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		461360AC1CEEA33400C5346B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461360B11CEEA33400C5346B /* FarmHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		461360B51CEEA33400C5346B /* FarmHouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmHouseTests.swift; sourceTree = "<group>"; };
+		461360B71CEEA33400C5346B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461360BC1CEEA33400C5346B /* FarmHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		461360C01CEEA33400C5346B /* FarmHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmHouseUITests.swift; sourceTree = "<group>"; };
+		461360C21CEEA33400C5346B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4613609A1CEEA33400C5346B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461360AE1CEEA33400C5346B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461360B91CEEA33400C5346B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		461360941CEEA33400C5346B = {
+			isa = PBXGroup;
+			children = (
+				4613609F1CEEA33400C5346B /* FarmHouse */,
+				461360B41CEEA33400C5346B /* FarmHouseTests */,
+				461360BF1CEEA33400C5346B /* FarmHouseUITests */,
+				4613609E1CEEA33400C5346B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4613609E1CEEA33400C5346B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4613609D1CEEA33400C5346B /* FarmHouse.app */,
+				461360B11CEEA33400C5346B /* FarmHouseTests.xctest */,
+				461360BC1CEEA33400C5346B /* FarmHouseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4613609F1CEEA33400C5346B /* FarmHouse */ = {
+			isa = PBXGroup;
+			children = (
+				461360A01CEEA33400C5346B /* AppDelegate.swift */,
+				461360A21CEEA33400C5346B /* ViewController.swift */,
+				461360A41CEEA33400C5346B /* Main.storyboard */,
+				461360A71CEEA33400C5346B /* Assets.xcassets */,
+				461360A91CEEA33400C5346B /* LaunchScreen.storyboard */,
+				461360AC1CEEA33400C5346B /* Info.plist */,
+			);
+			path = FarmHouse;
+			sourceTree = "<group>";
+		};
+		461360B41CEEA33400C5346B /* FarmHouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				461360B51CEEA33400C5346B /* FarmHouseTests.swift */,
+				461360B71CEEA33400C5346B /* Info.plist */,
+			);
+			path = FarmHouseTests;
+			sourceTree = "<group>";
+		};
+		461360BF1CEEA33400C5346B /* FarmHouseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				461360C01CEEA33400C5346B /* FarmHouseUITests.swift */,
+				461360C21CEEA33400C5346B /* Info.plist */,
+			);
+			path = FarmHouseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4613609C1CEEA33400C5346B /* FarmHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 461360C51CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouse" */;
+			buildPhases = (
+				461360991CEEA33400C5346B /* Sources */,
+				4613609A1CEEA33400C5346B /* Frameworks */,
+				4613609B1CEEA33400C5346B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FarmHouse;
+			productName = FarmHouse;
+			productReference = 4613609D1CEEA33400C5346B /* FarmHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		461360B01CEEA33400C5346B /* FarmHouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 461360C81CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouseTests" */;
+			buildPhases = (
+				461360AD1CEEA33400C5346B /* Sources */,
+				461360AE1CEEA33400C5346B /* Frameworks */,
+				461360AF1CEEA33400C5346B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				461360B31CEEA33400C5346B /* PBXTargetDependency */,
+			);
+			name = FarmHouseTests;
+			productName = FarmHouseTests;
+			productReference = 461360B11CEEA33400C5346B /* FarmHouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		461360BB1CEEA33400C5346B /* FarmHouseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 461360CB1CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouseUITests" */;
+			buildPhases = (
+				461360B81CEEA33400C5346B /* Sources */,
+				461360B91CEEA33400C5346B /* Frameworks */,
+				461360BA1CEEA33400C5346B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				461360BE1CEEA33400C5346B /* PBXTargetDependency */,
+			);
+			name = FarmHouseUITests;
+			productName = FarmHouseUITests;
+			productReference = 461360BC1CEEA33400C5346B /* FarmHouseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		461360951CEEA33400C5346B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Matthew Park";
+				TargetAttributes = {
+					4613609C1CEEA33400C5346B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					461360B01CEEA33400C5346B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 4613609C1CEEA33400C5346B;
+					};
+					461360BB1CEEA33400C5346B = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 4613609C1CEEA33400C5346B;
+					};
+				};
+			};
+			buildConfigurationList = 461360981CEEA33400C5346B /* Build configuration list for PBXProject "FarmHouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 461360941CEEA33400C5346B;
+			productRefGroup = 4613609E1CEEA33400C5346B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4613609C1CEEA33400C5346B /* FarmHouse */,
+				461360B01CEEA33400C5346B /* FarmHouseTests */,
+				461360BB1CEEA33400C5346B /* FarmHouseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4613609B1CEEA33400C5346B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461360AB1CEEA33400C5346B /* LaunchScreen.storyboard in Resources */,
+				461360A81CEEA33400C5346B /* Assets.xcassets in Resources */,
+				461360A61CEEA33400C5346B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461360AF1CEEA33400C5346B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461360BA1CEEA33400C5346B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		461360991CEEA33400C5346B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461360A31CEEA33400C5346B /* ViewController.swift in Sources */,
+				461360A11CEEA33400C5346B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461360AD1CEEA33400C5346B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461360B61CEEA33400C5346B /* FarmHouseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		461360B81CEEA33400C5346B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461360C11CEEA33400C5346B /* FarmHouseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		461360B31CEEA33400C5346B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4613609C1CEEA33400C5346B /* FarmHouse */;
+			targetProxy = 461360B21CEEA33400C5346B /* PBXContainerItemProxy */;
+		};
+		461360BE1CEEA33400C5346B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4613609C1CEEA33400C5346B /* FarmHouse */;
+			targetProxy = 461360BD1CEEA33400C5346B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		461360A41CEEA33400C5346B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				461360A51CEEA33400C5346B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		461360A91CEEA33400C5346B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				461360AA1CEEA33400C5346B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		461360C31CEEA33400C5346B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		461360C41CEEA33400C5346B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		461360C61CEEA33400C5346B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FarmHouse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarmHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		461360C71CEEA33400C5346B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FarmHouse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarmHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		461360C91CEEA33400C5346B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FarmHouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarmHouseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmHouse.app/FarmHouse";
+			};
+			name = Debug;
+		};
+		461360CA1CEEA33400C5346B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FarmHouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarmHouseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmHouse.app/FarmHouse";
+			};
+			name = Release;
+		};
+		461360CC1CEEA33400C5346B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FarmHouseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarmHouseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FarmHouse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		461360CD1CEEA33400C5346B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FarmHouseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FarmHouseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FarmHouse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		461360981CEEA33400C5346B /* Build configuration list for PBXProject "FarmHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461360C31CEEA33400C5346B /* Debug */,
+				461360C41CEEA33400C5346B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		461360C51CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461360C61CEEA33400C5346B /* Debug */,
+				461360C71CEEA33400C5346B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		461360C81CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461360C91CEEA33400C5346B /* Debug */,
+				461360CA1CEEA33400C5346B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		461360CB1CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				461360CC1CEEA33400C5346B /* Debug */,
+				461360CD1CEEA33400C5346B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 461360951CEEA33400C5346B /* Project object */;
+}
