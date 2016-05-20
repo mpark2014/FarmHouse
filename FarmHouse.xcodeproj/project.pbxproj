@@ -14,6 +14,8 @@
 		461360AB1CEEA33400C5346B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461360A91CEEA33400C5346B /* LaunchScreen.storyboard */; };
 		461360B61CEEA33400C5346B /* FarmHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360B51CEEA33400C5346B /* FarmHouseTests.swift */; };
 		461360C11CEEA33400C5346B /* FarmHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360C01CEEA33400C5346B /* FarmHouseUITests.swift */; };
+		461360CF1CEEA91D00C5346B /* ProduceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360CE1CEEA91D00C5346B /* ProduceTableViewCell.swift */; };
+		461360D11CEEABC500C5346B /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360D01CEEABC500C5346B /* PopoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		461360BC1CEEA33400C5346B /* FarmHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		461360C01CEEA33400C5346B /* FarmHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmHouseUITests.swift; sourceTree = "<group>"; };
 		461360C21CEEA33400C5346B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461360CE1CEEA91D00C5346B /* ProduceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProduceTableViewCell.swift; sourceTree = "<group>"; };
+		461360D01CEEABC500C5346B /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				461360A01CEEA33400C5346B /* AppDelegate.swift */,
 				461360A21CEEA33400C5346B /* ViewController.swift */,
 				461360A41CEEA33400C5346B /* Main.storyboard */,
+				461360D01CEEABC500C5346B /* PopoverViewController.swift */,
+				461360CE1CEEA91D00C5346B /* ProduceTableViewCell.swift */,
 				461360A71CEEA33400C5346B /* Assets.xcassets */,
 				461360A91CEEA33400C5346B /* LaunchScreen.storyboard */,
 				461360AC1CEEA33400C5346B /* Info.plist */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461360D11CEEABC500C5346B /* PopoverViewController.swift in Sources */,
+				461360CF1CEEA91D00C5346B /* ProduceTableViewCell.swift in Sources */,
 				461360A31CEEA33400C5346B /* ViewController.swift in Sources */,
 				461360A11CEEA33400C5346B /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +490,7 @@
 				461360C71CEEA33400C5346B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		461360C81CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouseTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				461360CA1CEEA33400C5346B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		461360CB1CEEA33400C5346B /* Build configuration list for PBXNativeTarget "FarmHouseUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				461360CD1CEEA33400C5346B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
