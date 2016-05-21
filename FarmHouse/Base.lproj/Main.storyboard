@@ -605,7 +605,7 @@ Deliveries</string>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkn-Ag-i91">
                                                             <rect key="frame" x="16" y="224" width="343" height="109.5"/>
-                                                            <string key="text">You have completely run out of fresh produce! You crave fresh strawberries but not those half ripe, bitter ones from your local grocery store. You want fresh, fully ripe berries that have been picked just hours before.</string>
+                                                            <string key="text">Oh no! John has completely run out of fresh produce. He craves strawberries but not those half ripe, bitter ones from his local grocery store. Instead, John wants fresh, fully ripe berries that have been picked just hours before.</string>
                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
@@ -651,7 +651,7 @@ Deliveries</string>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-a1-Mg0">
                                                             <rect key="frame" x="16" y="266" width="343" height="87.5"/>
-                                                            <string key="text">That's where we come in. You whip out your phone and choose from a variety of fruits and vegetables, and within a few taps, your food is on its way!</string>
+                                                            <string key="text">John whips out his phone and chooses from a variety of fruits and vegetables on our FarmHouse app, and within a few taps, his strawberries are on the way!</string>
                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
@@ -693,7 +693,7 @@ Deliveries</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myB-JJ-nAu">
-                                                    <rect key="frame" x="0.0" y="65" width="375" height="385.5"/>
+                                                    <rect key="frame" x="0.0" y="54.5" width="375" height="407"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Explanation3" translatesAutoresizingMaskIntoConstraints="NO" id="fm0-Cq-sT4">
                                                             <rect key="frame" x="37" y="-32" width="300" height="300"/>
@@ -703,8 +703,8 @@ Deliveries</string>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-bl-6ja">
-                                                            <rect key="frame" x="16" y="254" width="343" height="131.5"/>
-                                                            <string key="text">Once we get your order, our farmers picks your food straight off their plants in our FarmHouse - repurposed aeroponic warehouses near you. By using science, we can sustainably produce more organic food without yucky chemicals and with a higher nutritional content. Yes, please!</string>
+                                                            <rect key="frame" x="16" y="254" width="343" height="153"/>
+                                                            <string key="text">Once we get Joh's order, our farmers pick the produce straight off their plants in our FarmHouse - repurposed urban aeroponic warehouses. By using science, we can sustainably produce more organic food without yucky chemicals and with higher nutritional content. Yes, please!</string>
                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
@@ -747,8 +747,9 @@ Deliveries</string>
                                                                 <constraint firstAttribute="height" constant="300" id="Aw2-m0-6Fk"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your food is then given to our couriers and delivered straight to your door within hours. Now, that's what I call convenient!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD8-fD-jeK">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD8-fD-jeK">
                                                             <rect key="frame" x="16" y="192" width="343" height="66"/>
+                                                            <string key="text">John's strawberries are then given to our couriers and delivered straight to his door within hours. Now, that's what I call convenient!</string>
                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
