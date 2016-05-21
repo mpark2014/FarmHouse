@@ -25,7 +25,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let priceList = ["$3/pound", "$4/pound", "$2.50/head", "$3/ounce", "$4/ounce", "$4/ounce", "$2/pound"]
     let priceInt = [3, 4, 2.50, 3, 4, 4, 2]
     let units = ["pounds", "pounds", "heads", "pounds", "ounces", "ounces", "ounces", "ounces", "pounds"]
-    let headerMessasges = ["Check out our new herbs and spices!","FREE shipping on every order!", "Delivery within hours!"]
+    let headerMessasges = ["Check out our new herbs and spices","Free shipping on every order", "Delivery within hours"]
+    let headerImages = ["HerbsSpices","FreeShipping","DeliveryWithinHours"]
     
     var sendDataProduce:String!
     var sendDataPrice:Double!
@@ -41,8 +42,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         TableView.delegate = self
         TableView.dataSource = self
-        
-        TableView.contentInset = UIEdgeInsets(top: 128, left: 0, bottom: 0, right: 0)
         
         CollectionView.delegate = self
         CollectionView.dataSource = self
@@ -102,6 +101,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("InfoBarCell", forIndexPath: indexPath) as! InfoBarCollectionViewCell
         cell.MainLabel.text = headerMessasges[indexPath.row]
+        cell.MainImage.image = UIImage(named: headerImages[indexPath.row])
         cell.layer.backgroundColor = blueColorTransparent.CGColor
         return cell
     }

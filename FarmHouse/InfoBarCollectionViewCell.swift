@@ -15,7 +15,5 @@ class InfoBarCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        MainImage.alpha = 0.75
     }
 }
