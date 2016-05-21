@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         
-        TableView.delegate = self
+        TableView.delegate = self   
         TableView.dataSource = self
         
         CollectionView.delegate = self
