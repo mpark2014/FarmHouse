@@ -15,10 +15,15 @@ class PopoverViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var AddToCart: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var produceBlurb: UILabel!
+    @IBOutlet weak var produceImage: UIImageView!
+    @IBOutlet weak var quantityUnit: UILabel!
+    @IBOutlet weak var produceLabel: UILabel!
     
-    var index = -1
     var produce : String!
     var price : Double!
+    var unit : String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +31,11 @@ class PopoverViewController: UIViewController, UITextFieldDelegate {
         mainView.layer.cornerRadius = 8.0
         textField.delegate = self
         textField.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
+        
+        produceBlurb.text = "Buy our freshly picked " + produce + " and remember that all of our produce was picked hous before they got to you!"
+        produceImage.image = UIImage(named: produce)
+        quantityUnit.text = unit
+        produceLabel.text = produce
     }
 
     override func didReceiveMemoryWarning() {
