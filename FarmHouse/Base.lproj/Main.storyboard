@@ -204,15 +204,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qrj-DF-N8b">
-                                <rect key="frame" x="0.0" y="64" width="600" height="436"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qrj-DF-N8b">
+                                <rect key="frame" x="0.0" y="64" width="600" height="440.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="56" id="0h6-al-inz" customClass="CartTableViewCell" customModule="FarmHouse" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0h6-al-inz" id="A1F-bu-tqO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="55.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2c-7i-32o">
+                                                    <rect key="frame" x="15" y="17" width="66" height="22"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                    <color key="textColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPe-Ie-BLF">
+                                                    <rect key="frame" x="270" y="13" width="60" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="vor-yv-qPQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65m-zy-RYF">
+                                                    <rect key="frame" x="338" y="18" width="24.5" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-dn-Bcl">
+                                                    <rect key="frame" x="561.5" y="13" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="ouV-0q-B5O"/>
+                                                        <constraint firstAttribute="width" secondItem="ahI-dn-Bcl" secondAttribute="height" multiplier="1:1" id="tX2-DJ-McQ"/>
+                                                    </constraints>
+                                                    <state key="normal" image="Trash"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RPe-Ie-BLF" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="Da2-PH-Mog"/>
+                                                <constraint firstItem="r2c-7i-32o" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="S2J-WO-6r9"/>
+                                                <constraint firstItem="ahI-dn-Bcl" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="aGK-uc-Rtf"/>
+                                                <constraint firstItem="r2c-7i-32o" firstAttribute="leading" secondItem="A1F-bu-tqO" secondAttribute="leading" constant="15" id="l3W-cG-mXO"/>
+                                                <constraint firstItem="RPe-Ie-BLF" firstAttribute="centerX" secondItem="A1F-bu-tqO" secondAttribute="centerX" id="npi-l6-lXD"/>
+                                                <constraint firstAttribute="trailing" secondItem="ahI-dn-Bcl" secondAttribute="trailing" constant="8" id="vC7-A7-Y3y"/>
+                                                <constraint firstItem="65m-zy-RYF" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="xix-bs-5NI"/>
+                                                <constraint firstItem="65m-zy-RYF" firstAttribute="leading" secondItem="RPe-Ie-BLF" secondAttribute="trailing" constant="8" id="xjR-Oy-czm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ItemLabel" destination="r2c-7i-32o" id="TJp-D9-6XV"/>
+                                            <outlet property="ItemQuantity" destination="RPe-Ie-BLF" id="18H-9u-iAo"/>
+                                            <outlet property="ItemUnits" destination="65m-zy-RYF" id="6pi-Ny-dBI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00U-Fo-HXx">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="504" width="600" height="95.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYe-Bj-0en">
+                                        <rect key="frame" x="240" y="43" width="120" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="4Py-LE-xmj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                        <state key="normal" title="Check Out">
+                                            <color key="titleColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYZ-1B-3H3">
+                                        <rect key="frame" x="261" y="16" width="78.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="yIF-8k-lfL"/>
+                                    <constraint firstItem="ZYZ-1B-3H3" firstAttribute="top" secondItem="00U-Fo-HXx" secondAttribute="top" constant="16" id="L88-64-WUW"/>
+                                    <constraint firstItem="qYe-Bj-0en" firstAttribute="top" secondItem="ZYZ-1B-3H3" secondAttribute="bottom" constant="8" id="bCU-SU-N23"/>
+                                    <constraint firstItem="qYe-Bj-0en" firstAttribute="centerX" secondItem="00U-Fo-HXx" secondAttribute="centerX" id="iM8-WO-6b1"/>
+                                    <constraint firstAttribute="bottom" secondItem="qYe-Bj-0en" secondAttribute="bottom" constant="16" id="oFz-vH-Wh9"/>
+                                    <constraint firstItem="ZYZ-1B-3H3" firstAttribute="centerX" secondItem="00U-Fo-HXx" secondAttribute="centerX" id="u6C-g8-sxP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -227,6 +305,11 @@
                             <constraint firstItem="00U-Fo-HXx" firstAttribute="leading" secondItem="vjR-Ap-yvB" secondAttribute="leading" id="mBo-f1-bfb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CheckOutButton" destination="qYe-Bj-0en" id="U5M-Gh-0fO"/>
+                        <outlet property="TotalPriceLabel" destination="ZYZ-1B-3H3" id="gO0-BJ-4Fp"/>
+                        <outlet property="mainTableView" destination="Qrj-DF-N8b" id="WYZ-oJ-HOM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQu-Er-ahC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -779,5 +862,6 @@ Deliveries</string>
         <image name="FHLogoImage" width="540" height="540"/>
         <image name="Menu" width="32" height="32"/>
         <image name="Tomatoes" width="1200" height="1200"/>
+        <image name="Trash" width="32" height="32"/>
     </resources>
 </document>

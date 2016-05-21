@@ -8,6 +8,8 @@
 
 import UIKit
 
+var cart : Dictionary<String, Double> = ["Tomatoes":0,"Strawberries":0,"Lettuce":0,"Basil":0,"Mint":0,"Cilantro":0,"Cucumbers":0]
+
 class PopoverViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var ExitButton: UIButton!
@@ -50,6 +52,9 @@ class PopoverViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func AddToCart(sender: AnyObject) {
         if textField.text != "" {
+            let enteredAmt : Double? = Double(textField.text!)
+            cart[produce] = enteredAmt
+            
             view.endEditing(true)
             self.dismissViewControllerAnimated(true, completion: nil)
         }
@@ -60,7 +65,7 @@ class PopoverViewController: UIViewController, UITextFieldDelegate {
         if enteredAmt != nil {
             let totalPrice = enteredAmt! * price
             let roundedTotalPrice = Double(round(100*totalPrice)/100)
-            totalPriceLabel.text = "Total Price: $" + String(roundedTotalPrice)
+            totalPriceLabel.text = "Total Price: $" + totalPrice.fixedFractionDigits(2)
         } else {
             totalPriceLabel.text = "Total Price: $0"
         }
