@@ -209,9 +209,26 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qrj-DF-N8b">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="coo-QH-ZcL">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe right to delete items from your cart." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cav-hQ-o5h">
+                                            <rect key="frame" x="155.5" y="12" width="289" height="19"/>
+                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="cav-hQ-o5h" firstAttribute="centerX" secondItem="coo-QH-ZcL" secondAttribute="centerX" id="0NK-E2-r4y"/>
+                                        <constraint firstItem="cav-hQ-o5h" firstAttribute="centerY" secondItem="coo-QH-ZcL" secondAttribute="centerY" id="R42-ox-QSQ"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="56" id="0h6-al-inz" customClass="CartTableViewCell" customModule="FarmHouse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="56"/>
+                                        <rect key="frame" x="0.0" y="72" width="600" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="0h6-al-inz" id="A1F-bu-tqO">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="55.5"/>
@@ -224,44 +241,33 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPe-Ie-BLF">
-                                                    <rect key="frame" x="272.5" y="13" width="55" height="30"/>
+                                                    <rect key="frame" x="272" y="13" width="55" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="55" id="vor-yv-qPQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="lbs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65m-zy-RYF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="lbs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65m-zy-RYF">
                                                     <rect key="frame" x="338" y="18" width="24.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-dn-Bcl">
-                                                    <rect key="frame" x="562" y="13" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="ouV-0q-B5O"/>
-                                                        <constraint firstAttribute="width" secondItem="ahI-dn-Bcl" secondAttribute="height" multiplier="1:1" id="tX2-DJ-McQ"/>
-                                                    </constraints>
-                                                    <state key="normal" image="Trash"/>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$7.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="429-0f-fNZ">
-                                                    <rect key="frame" x="370.5" y="18" width="184" height="19"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="429-0f-fNZ">
+                                                    <rect key="frame" x="544.5" y="18" width="40.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="429-0f-fNZ" secondAttribute="trailing" constant="15" id="03Y-Bd-Hn8"/>
                                                 <constraint firstItem="RPe-Ie-BLF" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="Da2-PH-Mog"/>
-                                                <constraint firstItem="ahI-dn-Bcl" firstAttribute="leading" secondItem="429-0f-fNZ" secondAttribute="trailing" constant="8" id="IY9-YU-dyO"/>
                                                 <constraint firstItem="429-0f-fNZ" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="PRQ-wh-HKW"/>
                                                 <constraint firstItem="r2c-7i-32o" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="S2J-WO-6r9"/>
-                                                <constraint firstItem="ahI-dn-Bcl" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="aGK-uc-Rtf"/>
                                                 <constraint firstItem="r2c-7i-32o" firstAttribute="leading" secondItem="A1F-bu-tqO" secondAttribute="leading" constant="15" id="l3W-cG-mXO"/>
                                                 <constraint firstItem="RPe-Ie-BLF" firstAttribute="centerX" secondItem="A1F-bu-tqO" secondAttribute="centerX" id="npi-l6-lXD"/>
-                                                <constraint firstItem="429-0f-fNZ" firstAttribute="leading" secondItem="65m-zy-RYF" secondAttribute="trailing" constant="8" id="u69-G8-PkZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="ahI-dn-Bcl" secondAttribute="trailing" constant="8" id="vC7-A7-Y3y"/>
                                                 <constraint firstItem="65m-zy-RYF" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="xix-bs-5NI"/>
                                                 <constraint firstItem="65m-zy-RYF" firstAttribute="leading" secondItem="RPe-Ie-BLF" secondAttribute="trailing" constant="8" id="xjR-Oy-czm"/>
                                             </constraints>
@@ -1057,6 +1063,5 @@ Deliveries</string>
         <image name="FHLogoImage" width="540" height="540"/>
         <image name="Menu" width="16" height="16"/>
         <image name="Tomatoes" width="1200" height="1200"/>
-        <image name="Trash" width="32" height="32"/>
     </resources>
 </document>

@@ -66,6 +66,24 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         TotalPriceLabel.text = "Total: $" + totalPrice.fixedFractionDigits(2)
         
+        cell.selectionStyle = .None
+        
         return cell
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            let key = Array(itemsInCart.keys)[indexPath.row]
+            
+            let index = produceList.indexOf(key)
+            let subtotal = itemsInCart[key]! * priceInt[index!]
+            totalPrice -= subtotal
+            
+            itemsInCart.removeValueForKey(key)
+            cart[key] = 0
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+            
+            TotalPriceLabel.text = "Total: $" + totalPrice.fixedFractionDigits(2)
+        }
     }
 }
