@@ -8,25 +8,25 @@
 
 import UIKit
 
-let greenColor = UIColor(red: 176/255, green: 216/255, blue: 91/255, alpha: 0.75)
+let greenColor = UIColor(red: 176/255, green: 216/255, blue: 91/255, alpha: 1.0)
 let blueColor = UIColor(red: 77/255, green: 119/255, blue: 138/255, alpha: 1.0)
 let blueColorTransparent = UIColor(red: 77/255, green: 119/255, blue: 138/255, alpha: 0.75)
+
+// ----
+// DATA
+// ----
+
+let produceList = ["Tomatoes", "Strawberries", "Lettuce", "Mint", "Basil", "Cilantro", "Cucumbers"]
+let priceList = ["$3/pound", "$4/pound", "$2.50/head", "$3/ounce", "$4/ounce", "$4/ounce", "$2/pound"]
+let priceInt = [3, 4, 2.50, 3, 4, 4, 2]
+let units = ["lb.", "lb.", "heads", "oz.", "oz.", "oz.", "lb."]
+let headerMessasges = ["Check out our new herbs and spices","Free shipping on every order", "Delivery within hours"]
+let headerImages = ["HerbsSpices","FreeShipping","DeliveryWithinHours"]
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var CollectionView: UICollectionView!
-    
-    // ----
-    // DATA
-    // ----
-    
-    let produceList = ["Tomatoes", "Strawberries", "Lettuce", "Mint", "Basil", "Cilantro", "Cucumbers"]
-    let priceList = ["$3/pound", "$4/pound", "$2.50/head", "$3/ounce", "$4/ounce", "$4/ounce", "$2/pound"]
-    let priceInt = [3, 4, 2.50, 3, 4, 4, 2]
-    let units = ["pounds", "pounds", "heads", "pounds", "ounces", "ounces", "ounces", "ounces", "pounds"]
-    let headerMessasges = ["Check out our new herbs and spices","Free shipping on every order", "Delivery within hours"]
-    let headerImages = ["HerbsSpices","FreeShipping","DeliveryWithinHours"]
     
     var sendDataProduce:String!
     var sendDataPrice:Double!

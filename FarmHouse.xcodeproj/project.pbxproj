@@ -13,6 +13,8 @@
 		3E63BD771CEFD44C00C20417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63BD761CEFD44C00C20417 /* ViewController.swift */; };
 		3E63BD7B1CEFE1F100C20417 /* ExplanationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63BD7A1CEFE1F100C20417 /* ExplanationViewController.swift */; };
 		3E63BD7D1CF01FE000C20417 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63BD7C1CF01FE000C20417 /* CartTableViewCell.swift */; };
+		3E63BD7F1CF02E0400C20417 /* CartFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63BD7E1CF02E0400C20417 /* CartFinishViewController.swift */; };
+		3E63BD811CF03C1800C20417 /* AutomaticDeliveriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E63BD801CF03C1800C20417 /* AutomaticDeliveriesViewController.swift */; };
 		461360A11CEEA33400C5346B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461360A01CEEA33400C5346B /* AppDelegate.swift */; };
 		461360A61CEEA33400C5346B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461360A41CEEA33400C5346B /* Main.storyboard */; };
 		461360A81CEEA33400C5346B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461360A71CEEA33400C5346B /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		3E63BD761CEFD44C00C20417 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E63BD7A1CEFE1F100C20417 /* ExplanationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplanationViewController.swift; sourceTree = "<group>"; };
 		3E63BD7C1CF01FE000C20417 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		3E63BD7E1CF02E0400C20417 /* CartFinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartFinishViewController.swift; sourceTree = "<group>"; };
+		3E63BD801CF03C1800C20417 /* AutomaticDeliveriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticDeliveriesViewController.swift; sourceTree = "<group>"; };
 		4613609D1CEEA33400C5346B /* FarmHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		461360A01CEEA33400C5346B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		461360A51CEEA33400C5346B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			children = (
 				461360A01CEEA33400C5346B /* AppDelegate.swift */,
 				461360A41CEEA33400C5346B /* Main.storyboard */,
+				3E63BD801CF03C1800C20417 /* AutomaticDeliveriesViewController.swift */,
+				3E63BD7E1CF02E0400C20417 /* CartFinishViewController.swift */,
 				3E63BD7C1CF01FE000C20417 /* CartTableViewCell.swift */,
 				3E63BD7A1CEFE1F100C20417 /* ExplanationViewController.swift */,
 				3E63BD761CEFD44C00C20417 /* ViewController.swift */,
@@ -279,12 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E63BD731CEFC07100C20417 /* InfoBarCollectionViewCell.swift in Sources */,
+				3E63BD811CF03C1800C20417 /* AutomaticDeliveriesViewController.swift in Sources */,
 				461360D11CEEABC500C5346B /* PopoverViewController.swift in Sources */,
 				461360CF1CEEA91D00C5346B /* ProduceTableViewCell.swift in Sources */,
 				3E63BD7D1CF01FE000C20417 /* CartTableViewCell.swift in Sources */,
 				3E63BD711CEFBD7500C20417 /* CartViewController.swift in Sources */,
 				3E63BD771CEFD44C00C20417 /* ViewController.swift in Sources */,
 				3E63BD7B1CEFE1F100C20417 /* ExplanationViewController.swift in Sources */,
+				3E63BD7F1CF02E0400C20417 /* CartFinishViewController.swift in Sources */,
 				3E63BD751CEFC9E800C20417 /* PopoverInfoViewController.swift in Sources */,
 				461360A11CEEA33400C5346B /* AppDelegate.swift in Sources */,
 			);

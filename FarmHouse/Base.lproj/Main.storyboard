@@ -15,14 +15,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YYj-Jq-NjO">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <visualEffectView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="Zad-uc-J3w">
-                                    <rect key="frame" x="0.0" y="64" width="600" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nhb-GM-IbB">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
@@ -106,7 +106,7 @@
                                 </visualEffectView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProduceCell" rowHeight="100" id="rRL-jr-GGu" customClass="ProduceTableViewCell" customModule="FarmHouse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="220" width="600" height="100"/>
+                                        <rect key="frame" x="0.0" y="156" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rRL-jr-GGu" id="eyk-lO-7WC">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
@@ -169,6 +169,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FarmHouse" id="2Ji-Zo-iek">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="PUq-mt-uXY"/>
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="Cm1-We-C8o">
                             <color key="tintColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -182,6 +183,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="CollectionView" destination="hYR-MS-4Em" id="GY6-NO-WOs"/>
                         <outlet property="TableView" destination="YYj-Jq-NjO" id="Oax-Q8-d6Y"/>
@@ -201,17 +203,17 @@
                         <viewControllerLayoutGuide type="bottom" id="5s4-t7-jPx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vjR-Ap-yvB">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qrj-DF-N8b">
-                                <rect key="frame" x="0.0" y="64" width="600" height="440.5"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qrj-DF-N8b">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="56" id="0h6-al-inz" customClass="CartTableViewCell" customModule="FarmHouse" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="56"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0h6-al-inz" id="A1F-bu-tqO">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="0h6-al-inz" id="A1F-bu-tqO">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="55.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -221,35 +223,44 @@
                                                     <color key="textColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPe-Ie-BLF">
-                                                    <rect key="frame" x="270" y="13" width="60" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RPe-Ie-BLF">
+                                                    <rect key="frame" x="272.5" y="13" width="55" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="vor-yv-qPQ"/>
+                                                        <constraint firstAttribute="width" constant="55" id="vor-yv-qPQ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lbs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65m-zy-RYF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="lbs." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65m-zy-RYF">
                                                     <rect key="frame" x="338" y="18" width="24.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahI-dn-Bcl">
-                                                    <rect key="frame" x="561.5" y="13" width="30" height="30"/>
+                                                    <rect key="frame" x="562" y="13" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="ouV-0q-B5O"/>
                                                         <constraint firstAttribute="width" secondItem="ahI-dn-Bcl" secondAttribute="height" multiplier="1:1" id="tX2-DJ-McQ"/>
                                                     </constraints>
                                                     <state key="normal" image="Trash"/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$7.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="429-0f-fNZ">
+                                                    <rect key="frame" x="370.5" y="18" width="184" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Italic" family="Optima" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RPe-Ie-BLF" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="Da2-PH-Mog"/>
+                                                <constraint firstItem="ahI-dn-Bcl" firstAttribute="leading" secondItem="429-0f-fNZ" secondAttribute="trailing" constant="8" id="IY9-YU-dyO"/>
+                                                <constraint firstItem="429-0f-fNZ" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="PRQ-wh-HKW"/>
                                                 <constraint firstItem="r2c-7i-32o" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="S2J-WO-6r9"/>
                                                 <constraint firstItem="ahI-dn-Bcl" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="aGK-uc-Rtf"/>
                                                 <constraint firstItem="r2c-7i-32o" firstAttribute="leading" secondItem="A1F-bu-tqO" secondAttribute="leading" constant="15" id="l3W-cG-mXO"/>
                                                 <constraint firstItem="RPe-Ie-BLF" firstAttribute="centerX" secondItem="A1F-bu-tqO" secondAttribute="centerX" id="npi-l6-lXD"/>
+                                                <constraint firstItem="429-0f-fNZ" firstAttribute="leading" secondItem="65m-zy-RYF" secondAttribute="trailing" constant="8" id="u69-G8-PkZ"/>
                                                 <constraint firstAttribute="trailing" secondItem="ahI-dn-Bcl" secondAttribute="trailing" constant="8" id="vC7-A7-Y3y"/>
                                                 <constraint firstItem="65m-zy-RYF" firstAttribute="centerY" secondItem="A1F-bu-tqO" secondAttribute="centerY" id="xix-bs-5NI"/>
                                                 <constraint firstItem="65m-zy-RYF" firstAttribute="leading" secondItem="RPe-Ie-BLF" secondAttribute="trailing" constant="8" id="xjR-Oy-czm"/>
@@ -259,14 +270,15 @@
                                             <outlet property="ItemLabel" destination="r2c-7i-32o" id="TJp-D9-6XV"/>
                                             <outlet property="ItemQuantity" destination="RPe-Ie-BLF" id="18H-9u-iAo"/>
                                             <outlet property="ItemUnits" destination="65m-zy-RYF" id="6pi-Ny-dBI"/>
+                                            <outlet property="SubtotalLabel" destination="429-0f-fNZ" id="y7r-H5-sKD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00U-Fo-HXx">
-                                <rect key="frame" x="0.0" y="504" width="600" height="95.5"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00U-Fo-HXx">
+                                <rect key="frame" x="0.0" y="440" width="600" height="95.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYe-Bj-0en">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYe-Bj-0en">
                                         <rect key="frame" x="240" y="43" width="120" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -276,9 +288,12 @@
                                         <state key="normal" title="Check Out">
                                             <color key="titleColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="gem-PC-sMf" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="OgN-Yv-7b6"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYZ-1B-3H3">
-                                        <rect key="frame" x="261" y="16" width="78.5" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYZ-1B-3H3">
+                                        <rect key="frame" x="261" y="16" width="78.5" height="20"/>
                                         <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -314,6 +329,98 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQu-Er-ahC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="722" y="1112"/>
+        </scene>
+        <!--Cart Finish View Controller-->
+        <scene sceneID="KJN-CB-h3u">
+            <objects>
+                <viewController id="gem-PC-sMf" customClass="CartFinishViewController" customModule="FarmHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rWk-oD-lIB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Az8-aK-KhO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ufi-id-dne">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ioy-e6-fYf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sym-59-KD8">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JH-np-ze0">
+                                            <rect key="frame" x="170" y="182" width="260" height="236.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Explanation4" translatesAutoresizingMaskIntoConstraints="NO" id="Dh5-bA-4ds">
+                                                    <rect key="frame" x="30" y="0.0" width="200" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="15H-SS-8pa"/>
+                                                        <constraint firstAttribute="height" constant="128" id="u2f-j3-nAx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order is on its way and will be at your doorstep within hours." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj8-tI-a4w">
+                                                    <rect key="frame" x="8" y="137" width="244" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're Finished!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz2-Cd-zu7">
+                                                    <rect key="frame" x="67" y="112" width="125.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Or-O6-Aut">
+                                                    <rect key="frame" x="105" y="186" width="49" height="34"/>
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                                    <state key="normal" title="Home">
+                                                        <color key="titleColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="dZb-L9-HcZ" kind="show" id="YrY-zC-3Ts"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Tz2-Cd-zu7" firstAttribute="centerX" secondItem="7JH-np-ze0" secondAttribute="centerX" id="AmC-1W-V06"/>
+                                                <constraint firstItem="Tz2-Cd-zu7" firstAttribute="top" secondItem="Dh5-bA-4ds" secondAttribute="bottom" constant="-16" id="KL7-qG-f1u"/>
+                                                <constraint firstItem="4Or-O6-Aut" firstAttribute="top" secondItem="fj8-tI-a4w" secondAttribute="bottom" constant="16" id="UmK-np-xgc"/>
+                                                <constraint firstAttribute="trailing" secondItem="fj8-tI-a4w" secondAttribute="trailing" constant="8" id="XN1-jF-Mxd"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Or-O6-Aut" secondAttribute="bottom" constant="16" id="blm-zz-hpO"/>
+                                                <constraint firstItem="fj8-tI-a4w" firstAttribute="centerX" secondItem="7JH-np-ze0" secondAttribute="centerX" id="eUt-Ka-vmW"/>
+                                                <constraint firstItem="fj8-tI-a4w" firstAttribute="top" secondItem="Tz2-Cd-zu7" secondAttribute="bottom" constant="4" id="fgD-GA-AB7"/>
+                                                <constraint firstItem="4Or-O6-Aut" firstAttribute="centerX" secondItem="7JH-np-ze0" secondAttribute="centerX" id="iPZ-2h-Y9S"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dh5-bA-4ds" secondAttribute="trailing" constant="30" id="kJX-jF-8Jz"/>
+                                                <constraint firstItem="Dh5-bA-4ds" firstAttribute="top" secondItem="7JH-np-ze0" secondAttribute="top" id="lMS-1u-D05"/>
+                                                <constraint firstItem="fj8-tI-a4w" firstAttribute="leading" secondItem="7JH-np-ze0" secondAttribute="leading" constant="8" id="oYt-HU-yVl"/>
+                                                <constraint firstItem="Dh5-bA-4ds" firstAttribute="leading" secondItem="7JH-np-ze0" secondAttribute="leading" constant="30" id="xRU-OF-7Pd"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7JH-np-ze0" firstAttribute="centerX" secondItem="sym-59-KD8" secondAttribute="centerX" id="f7h-Qs-OsC"/>
+                                        <constraint firstItem="7JH-np-ze0" firstAttribute="centerY" secondItem="sym-59-KD8" secondAttribute="centerY" id="hog-wP-mkM"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ioy-e6-fYf" firstAttribute="leading" secondItem="ufi-id-dne" secondAttribute="leading" id="QSj-gu-fcq"/>
+                            <constraint firstItem="Az8-aK-KhO" firstAttribute="top" secondItem="Ioy-e6-fYf" secondAttribute="bottom" id="cJ0-fC-miD"/>
+                            <constraint firstAttribute="trailing" secondItem="Ioy-e6-fYf" secondAttribute="trailing" id="i8f-vs-X6f"/>
+                            <constraint firstItem="Ioy-e6-fYf" firstAttribute="top" secondItem="ufi-id-dne" secondAttribute="top" id="na8-SE-vHX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="7JH-np-ze0" id="zR0-Hp-z2m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVO-kX-OFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="1112"/>
         </scene>
         <!--Popover Info View Controller-->
         <scene sceneID="gSz-6Q-498">
@@ -365,8 +472,8 @@
                                     <segue destination="Zt5-AJ-xy6" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="oFJ-xl-Udf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls8-vi-Fj9">
-                                <rect key="frame" x="253" y="241" width="92" height="40.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls8-vi-Fj9">
+                                <rect key="frame" x="254" y="241" width="92" height="40.5"/>
                                 <string key="text">What is
 FarmHouse?</string>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
@@ -386,6 +493,10 @@ FarmHouse?</string>
                                     <constraint firstAttribute="height" constant="150" id="MN5-3C-Aof"/>
                                     <constraint firstAttribute="width" secondItem="REr-Ny-MYb" secondAttribute="height" multiplier="1:1" id="d3C-l4-mZn"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="AutomaticDeliveries:" destination="G7k-mo-bGi" eventType="touchUpInside" id="zBC-DH-a7c"/>
+                                    <segue destination="QJr-s7-nxM" kind="presentation" identifier="AutoDeliveriesSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="7IN-40-1by"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPe-OK-qm4">
                                 <rect key="frame" x="261" y="410" width="77.5" height="40.5"/>
@@ -433,6 +544,9 @@ Deliveries</string>
                             <constraint firstAttribute="trailing" secondItem="0dd-y3-KPr" secondAttribute="trailing" id="yDL-6L-9A8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ExitButton" destination="wb3-DM-u7L" id="gXp-Hd-JjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="510-K9-CyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,14 +566,18 @@ Deliveries</string>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="zHy-Gm-2gQ">
                                 <rect key="frame" x="723" y="555" width="55" height="37"/>
-                                <color key="pageIndicatorTintColor" white="0.75" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" red="0.69019607843137254" green="0.84705882352941175" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="pageIndicatorTintColor" white="0.84999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1D-B0-eAq">
-                                <rect key="frame" x="20" y="557" width="36" height="33"/>
+                                <rect key="frame" x="0.0" y="553.5" width="64" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rh7-ES-LFe"/>
+                                    <constraint firstAttribute="width" constant="64" id="kmt-Vy-b68"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.69019607839999997" green="0.84705882349999995" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="Back:" destination="Zt5-AJ-xy6" eventType="touchUpInside" id="xEi-j8-nmB"/>
@@ -483,12 +601,12 @@ Deliveries</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDy-Mg-2Nk">
-                                                    <rect key="frame" x="0.0" y="60" width="375" height="395"/>
+                                                    <rect key="frame" x="0.0" y="91" width="375" height="333.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkn-Ag-i91">
-                                                            <rect key="frame" x="16" y="224" width="343" height="171"/>
-                                                            <string key="text">As you stare into the emptiness of your refrigerator, you notice that you have completely run out of fresh produce! All of your fruits and vegetables are either gone or are completely brown. You crave fresh strawberries to munch on, but not those half ripe, bitter berries from the crappy produce section of your local grocery store. You want local, fully ripe strawberries that have just been picked hours before.</string>
-                                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                            <rect key="frame" x="16" y="224" width="343" height="109.5"/>
+                                                            <string key="text">You have completely run out of fresh produce! You crave fresh strawberries but not those half ripe, bitter ones from your local grocery store. You want fresh, fully ripe berries that have been picked just hours before.</string>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -529,12 +647,12 @@ Deliveries</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyy-sa-4Gt">
-                                                    <rect key="frame" x="0.0" y="77.5" width="375" height="361"/>
+                                                    <rect key="frame" x="0.0" y="81.5" width="375" height="353.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZb-a1-Mg0">
-                                                            <rect key="frame" x="16" y="266" width="343" height="95"/>
-                                                            <string key="text">That's where we come in. You whip out your phone and choose from a variety of different fruits and vegetables to fill your refrigerator, and within a few taps, you're done and your food is on its way!</string>
-                                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                            <rect key="frame" x="16" y="266" width="343" height="87.5"/>
+                                                            <string key="text">That's where we come in. You whip out your phone and choose from a variety of fruits and vegetables, and within a few taps, your food is on its way!</string>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -575,7 +693,7 @@ Deliveries</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myB-JJ-nAu">
-                                                    <rect key="frame" x="0.0" y="45.5" width="375" height="425"/>
+                                                    <rect key="frame" x="0.0" y="65" width="375" height="385.5"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Explanation3" translatesAutoresizingMaskIntoConstraints="NO" id="fm0-Cq-sT4">
                                                             <rect key="frame" x="37" y="-32" width="300" height="300"/>
@@ -585,9 +703,9 @@ Deliveries</string>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-bl-6ja">
-                                                            <rect key="frame" x="16" y="254" width="343" height="171"/>
-                                                            <string key="text">Once we get your order, one of our esteemed farmers picks your food straight from the plant in our FarmHouse - repurposed warehouses in cities near you that take advantage of new-age aeroponic growing technology. By using science, we can sustainably produce organic food without the yucky chemicals and twice the nutritional content of that of your average grocery store selection.</string>
-                                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                            <rect key="frame" x="16" y="254" width="343" height="131.5"/>
+                                                            <string key="text">Once we get your order, our farmers picks your food straight off their plants in our FarmHouse - repurposed aeroponic warehouses near you. By using science, we can sustainably produce more organic food without yucky chemicals and with a higher nutritional content. Yes, please!</string>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -621,7 +739,7 @@ Deliveries</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kew-VQ-XqN">
-                                                    <rect key="frame" x="0.0" y="124" width="375" height="268"/>
+                                                    <rect key="frame" x="0.0" y="129.5" width="375" height="258"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Explanation4" translatesAutoresizingMaskIntoConstraints="NO" id="dok-is-fAH">
                                                             <rect key="frame" x="16" y="-64" width="343" height="300"/>
@@ -629,10 +747,9 @@ Deliveries</string>
                                                                 <constraint firstAttribute="height" constant="300" id="Aw2-m0-6Fk"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD8-fD-jeK">
-                                                            <rect key="frame" x="16" y="192" width="343" height="76"/>
-                                                            <string key="text">Your food is then given to our couriers and delivered straight to your door after being on the plant nearly hours before. Say goodbye to nasty produce and hello to good food!</string>
-                                                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your food is then given to our couriers and delivered straight to your door within hours. Now, that's what I call convenient!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD8-fD-jeK">
+                                                            <rect key="frame" x="16" y="192" width="343" height="66"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -667,9 +784,9 @@ Deliveries</string>
                             <constraint firstItem="oDH-Ib-FuO" firstAttribute="top" secondItem="4GW-vU-0S7" secondAttribute="top" id="JHT-gN-rbY"/>
                             <constraint firstItem="zHy-Gm-2gQ" firstAttribute="top" secondItem="oDH-Ib-FuO" secondAttribute="bottom" id="P8Z-ML-A44"/>
                             <constraint firstItem="oDH-Ib-FuO" firstAttribute="leading" secondItem="4GW-vU-0S7" secondAttribute="leading" id="Ubx-4w-4Mw"/>
+                            <constraint firstItem="b1D-B0-eAq" firstAttribute="leading" secondItem="4GW-vU-0S7" secondAttribute="leading" id="XB1-es-Kbi"/>
                             <constraint firstItem="zHy-Gm-2gQ" firstAttribute="centerX" secondItem="4GW-vU-0S7" secondAttribute="centerX" id="XOC-cx-ZGu"/>
                             <constraint firstItem="b1D-B0-eAq" firstAttribute="centerY" secondItem="zHy-Gm-2gQ" secondAttribute="centerY" id="g1J-sb-Hye"/>
-                            <constraint firstItem="b1D-B0-eAq" firstAttribute="leading" secondItem="4GW-vU-0S7" secondAttribute="leading" constant="20" id="owc-gG-06l"/>
                             <constraint firstAttribute="trailing" secondItem="oDH-Ib-FuO" secondAttribute="trailing" id="qxh-5Y-DpJ"/>
                             <constraint firstItem="M4J-Hj-zGd" firstAttribute="top" secondItem="zHy-Gm-2gQ" secondAttribute="bottom" constant="8" id="ygR-Tm-3VV"/>
                         </constraints>
@@ -835,11 +952,88 @@ Deliveries</string>
             </objects>
             <point key="canvasLocation" x="1439" y="403"/>
         </scene>
+        <!--Automatic Deliveries View Controller-->
+        <scene sceneID="19S-8s-1LQ">
+            <objects>
+                <viewController id="QJr-s7-nxM" customClass="AutomaticDeliveriesViewController" customModule="FarmHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Vc-pJ-ipT"/>
+                        <viewControllerLayoutGuide type="bottom" id="uBX-tU-wD8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LhQ-Tl-Eo4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqf-Aq-e14">
+                                <rect key="frame" x="150" y="115" width="300" height="369"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Delivery" translatesAutoresizingMaskIntoConstraints="NO" id="pfj-0a-hP3">
+                                        <rect key="frame" x="72" y="48" width="156" height="156"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="D2b-uM-zb2"/>
+                                            <constraint firstAttribute="width" secondItem="pfj-0a-hP3" secondAttribute="height" multiplier="1:1" id="TWR-ml-LmI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automatic Deliveries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flC-Y9-MrR">
+                                        <rect key="frame" x="58" y="16" width="184" height="24"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-Dd-Ywa">
+                                        <rect key="frame" x="8" y="220" width="284" height="133"/>
+                                        <string key="text">Automatic deliveries allow you to setup regular delivery times for produce that you need on a consistent basis. For example, if you are a restaurant and need 20 heads of lettuce, twice a week, we can automatically deliver them to you on your time.</string>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-hh-flk">
+                                        <rect key="frame" x="8" y="10" width="30" height="36"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.30196078430000001" green="0.46666666670000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Exit:" destination="QJr-s7-nxM" eventType="touchUpInside" id="sld-Z4-8Tr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="flC-Y9-MrR" firstAttribute="top" secondItem="gqf-Aq-e14" secondAttribute="top" constant="16" id="60a-If-10U"/>
+                                    <constraint firstItem="flC-Y9-MrR" firstAttribute="centerX" secondItem="gqf-Aq-e14" secondAttribute="centerX" id="AW3-a3-GWa"/>
+                                    <constraint firstItem="yrE-Dd-Ywa" firstAttribute="leading" secondItem="gqf-Aq-e14" secondAttribute="leading" constant="8" id="CAg-3e-zuo"/>
+                                    <constraint firstItem="yrE-Dd-Ywa" firstAttribute="top" secondItem="pfj-0a-hP3" secondAttribute="bottom" constant="16" id="LoL-7r-bue"/>
+                                    <constraint firstItem="cXR-hh-flk" firstAttribute="centerY" secondItem="flC-Y9-MrR" secondAttribute="centerY" id="QQn-Me-9bS"/>
+                                    <constraint firstAttribute="trailing" secondItem="pfj-0a-hP3" secondAttribute="trailing" constant="72" id="VVs-bt-gLV"/>
+                                    <constraint firstItem="pfj-0a-hP3" firstAttribute="top" secondItem="flC-Y9-MrR" secondAttribute="bottom" constant="8" id="YZi-xu-qb9"/>
+                                    <constraint firstItem="pfj-0a-hP3" firstAttribute="leading" secondItem="gqf-Aq-e14" secondAttribute="leading" constant="72" id="aQV-c7-Nng"/>
+                                    <constraint firstAttribute="bottom" secondItem="yrE-Dd-Ywa" secondAttribute="bottom" constant="16" id="paP-jM-PVh"/>
+                                    <constraint firstItem="cXR-hh-flk" firstAttribute="leading" secondItem="gqf-Aq-e14" secondAttribute="leading" constant="8" id="syt-iW-2VH"/>
+                                    <constraint firstAttribute="trailing" secondItem="yrE-Dd-Ywa" secondAttribute="trailing" constant="8" id="zoH-RK-jdV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gqf-Aq-e14" firstAttribute="centerX" secondItem="LhQ-Tl-Eo4" secondAttribute="centerX" id="6aa-QW-i6K"/>
+                            <constraint firstItem="gqf-Aq-e14" firstAttribute="centerY" secondItem="LhQ-Tl-Eo4" secondAttribute="centerY" id="8Wh-49-eHY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="gqf-Aq-e14" id="yLS-Dg-2xF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94L-G8-dCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="-1009"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="UHQ-Ig-pZy">
             <objects>
                 <navigationController id="dZb-L9-HcZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C5S-U5-iKe">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="C5S-U5-iKe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -853,14 +1047,14 @@ Deliveries</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Cart" width="33" height="33"/>
+        <image name="Cart" width="32" height="32"/>
         <image name="Delivery" width="540" height="540"/>
         <image name="Explanation1" width="1166" height="547"/>
         <image name="Explanation2" width="729" height="1021"/>
         <image name="Explanation3" width="1000" height="875"/>
         <image name="Explanation4" width="1312" height="875"/>
         <image name="FHLogoImage" width="540" height="540"/>
-        <image name="Menu" width="32" height="32"/>
+        <image name="Menu" width="16" height="16"/>
         <image name="Tomatoes" width="1200" height="1200"/>
         <image name="Trash" width="32" height="32"/>
     </resources>

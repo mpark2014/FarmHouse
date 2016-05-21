@@ -21,10 +21,12 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var TotalPriceLabel: UILabel!
     
     var itemsInCart:Dictionary<String, Double> = [:]
+    var totalPrice:Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
+        self.navigationController!.navigationBar.tintColor = blueColor
         
         CheckOutButton.layer.cornerRadius = CheckOutButton.frame.size.height/2.0
         
@@ -53,8 +55,16 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CartCell", forIndexPath: indexPath) as! CartTableViewCell
         let key = Array(itemsInCart.keys)[indexPath.row]
+        let index = produceList.indexOf(key)
+        let subtotal = itemsInCart[key]! * priceInt[index!]
+        totalPrice += subtotal
+        
         cell.ItemLabel.text = key
         cell.ItemQuantity.text = itemsInCart[key]?.fixedFractionDigits(2)
+        cell.ItemUnits.text = units[index!]
+        cell.SubtotalLabel.text = "$" + subtotal.fixedFractionDigits(2)
+        
+        TotalPriceLabel.text = "Total: $" + totalPrice.fixedFractionDigits(2)
         
         return cell
     }

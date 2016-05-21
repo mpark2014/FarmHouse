@@ -8,7 +8,7 @@
 
 import UIKit
 
-var cart : Dictionary<String, Double> = ["Tomatoes":0,"Strawberries":0,"Lettuce":0,"Basil":0,"Mint":0,"Cilantro":0,"Cucumbers":0]
+var cart : Dictionary<String, Double> = ["Tomatoes":0,"Strawberries":0,"Lettuce":0,"Mint":0,"Basil":0,"Cilantro":0,"Cucumbers":0]
 
 class PopoverViewController: UIViewController, UITextFieldDelegate {
 
